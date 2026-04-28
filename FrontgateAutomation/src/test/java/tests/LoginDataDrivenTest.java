@@ -94,7 +94,6 @@ public class LoginDataDrivenTest {
                     break;
 
                 case "success":
-                    // انتظر redirect
                     new WebDriverWait(driver, Duration.ofSeconds(30)).until(
                         d -> !d.getCurrentUrl().contains("UserLogonView")
                     );
